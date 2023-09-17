@@ -40,5 +40,5 @@ do_compile_append() {
 
 do_deploy_append() {
 	install -d ${DEPLOYDIR}/overlays
-	install -m 644 ${WORKDIR}/linux-radxa_cm3_io_rk3566-standard-build/arch/arm64/boot/dts/rockchip/overlay/* ${DEPLOYDIR}/overlays
+	install -m 644 ${B}/arch/arm64/boot/dts/rockchip/overlay/* ${DEPLOYDIR}/overlays
 }
